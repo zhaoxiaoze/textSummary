@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/key_word.dir/key_word.cpp.o CMakeFiles/key_word.dir/src/sentence_rank.cpp.o CMakeFiles/key_word.dir/src/text_rank.cpp.o CMakeFiles/key_word.dir/src/text_utils.cpp.o  -o key_word 

@@ -1,0 +1,9 @@
+/Users/zhaoze/workplace/projects/textrank/CMakeFiles/rebuild_cache.dir
+/Users/zhaoze/workplace/projects/textrank/CMakeFiles/edit_cache.dir
+/Users/zhaoze/workplace/projects/textrank/CMakeFiles/segment.dir
+/Users/zhaoze/workplace/projects/textrank/CMakeFiles/keyword.dir
+<<<<<<< Updated upstream
+/Users/zhaoze/workplace/projects/textrank/CMakeFiles/keysentence.dir
+=======
+/Users/zhaoze/workplace/projects/textrank/CMakeFiles/textrank.dir
+>>>>>>> Stashed changes

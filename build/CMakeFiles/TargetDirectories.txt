@@ -1,0 +1,4 @@
+/Users/zhaoze/workplace/projects/textrank/build/CMakeFiles/rebuild_cache.dir
+/Users/zhaoze/workplace/projects/textrank/build/CMakeFiles/edit_cache.dir
+/Users/zhaoze/workplace/projects/textrank/build/CMakeFiles/segment.dir
+/Users/zhaoze/workplace/projects/textrank/build/CMakeFiles/textrank.dir

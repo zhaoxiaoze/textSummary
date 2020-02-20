@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/Users/zhaoze/workplace/projects/textrank/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -O3 -Wall -g -std=c++0x -o CMakeFiles/segment.dir/segment.cpp.o -c /Users/zhaoze/workplace/projects/textrank/segment.cpp",
+  "file": "/Users/zhaoze/workplace/projects/textrank/segment.cpp"
+},
+{
+  "directory": "/Users/zhaoze/workplace/projects/textrank/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -O3 -Wall -g -std=c++0x -o CMakeFiles/segment.dir/src/text_utils.cpp.o -c /Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp",
+  "file": "/Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp"
+},
+{
+  "directory": "/Users/zhaoze/workplace/projects/textrank/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -O3 -Wall -g -std=c++0x -o CMakeFiles/textrank.dir/src/main.cpp.o -c /Users/zhaoze/workplace/projects/textrank/src/main.cpp",
+  "file": "/Users/zhaoze/workplace/projects/textrank/src/main.cpp"
+},
+{
+  "directory": "/Users/zhaoze/workplace/projects/textrank/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -O3 -Wall -g -std=c++0x -o CMakeFiles/textrank.dir/src/sentence_rank.cpp.o -c /Users/zhaoze/workplace/projects/textrank/src/sentence_rank.cpp",
+  "file": "/Users/zhaoze/workplace/projects/textrank/src/sentence_rank.cpp"
+},
+{
+  "directory": "/Users/zhaoze/workplace/projects/textrank/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -O3 -Wall -g -std=c++0x -o CMakeFiles/textrank.dir/src/text_rank.cpp.o -c /Users/zhaoze/workplace/projects/textrank/src/text_rank.cpp",
+  "file": "/Users/zhaoze/workplace/projects/textrank/src/text_rank.cpp"
+},
+{
+  "directory": "/Users/zhaoze/workplace/projects/textrank/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -O3 -Wall -g -std=c++0x -o CMakeFiles/textrank.dir/src/text_utils.cpp.o -c /Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp",
+  "file": "/Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp"
+}
+]

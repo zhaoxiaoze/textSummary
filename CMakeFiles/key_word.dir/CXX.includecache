@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+sstream
+-
+cctype
+-
+text_utils.h
+/Users/zhaoze/workplace/projects/textrank/src/text_utils.h
+
+/Users/zhaoze/workplace/projects/textrank/src/text_utils.h
+string
+-
+map
+-
+set
+-
+vector
+-
+ctime
+-
+

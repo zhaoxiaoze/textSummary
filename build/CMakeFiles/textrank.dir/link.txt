@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/textrank.dir/src/main.cpp.o CMakeFiles/textrank.dir/src/sentence_rank.cpp.o CMakeFiles/textrank.dir/src/text_rank.cpp.o CMakeFiles/textrank.dir/src/text_utils.cpp.o  -o textrank 
