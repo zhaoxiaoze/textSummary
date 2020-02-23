@@ -29,4 +29,5 @@ CMakeFiles/text.dir/summary.cpp.o: src/sentence_rank.h
 CMakeFiles/text.dir/summary.cpp.o: src/text_rank.h
 CMakeFiles/text.dir/summary.cpp.o: src/text_utils.h
 CMakeFiles/text.dir/summary.cpp.o: summary.cpp
+CMakeFiles/text.dir/summary.cpp.o: summary.h
 
