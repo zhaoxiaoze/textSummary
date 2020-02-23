@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/textrank.dir/src/main.cpp.o"
   "CMakeFiles/textrank.dir/src/sentence_rank.cpp.o"
   "CMakeFiles/textrank.dir/src/text_rank.cpp.o"
   "CMakeFiles/textrank.dir/src/text_utils.cpp.o"

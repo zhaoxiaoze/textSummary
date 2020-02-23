@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zhaoze/workplace/projects/textrank/segment.cpp" "/Users/zhaoze/workplace/projects/textrank/CMakeFiles/segment.dir/segment.cpp.o"
-  "/Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp" "/Users/zhaoze/workplace/projects/textrank/CMakeFiles/segment.dir/src/text_utils.cpp.o"
+  "/Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp" "/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/segment.dir/src/text_utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

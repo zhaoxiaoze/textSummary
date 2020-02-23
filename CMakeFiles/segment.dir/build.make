@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zhaoze/workplace/projects/textrank
+CMAKE_SOURCE_DIR = /Users/zhaoze/workplace/projects/textSummary
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textrank
+CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textSummary
 
 # Include any dependencies generated for this target.
 include CMakeFiles/segment.dir/depend.make
@@ -57,45 +57,30 @@ include CMakeFiles/segment.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/segment.dir/flags.make
 
-CMakeFiles/segment.dir/segment.cpp.o: CMakeFiles/segment.dir/flags.make
-CMakeFiles/segment.dir/segment.cpp.o: segment.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textrank/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/segment.dir/segment.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/segment.dir/segment.cpp.o -c /Users/zhaoze/workplace/projects/textrank/segment.cpp
-
-CMakeFiles/segment.dir/segment.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/segment.dir/segment.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textrank/segment.cpp > CMakeFiles/segment.dir/segment.cpp.i
-
-CMakeFiles/segment.dir/segment.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/segment.dir/segment.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textrank/segment.cpp -o CMakeFiles/segment.dir/segment.cpp.s
-
 CMakeFiles/segment.dir/src/text_utils.cpp.o: CMakeFiles/segment.dir/flags.make
 CMakeFiles/segment.dir/src/text_utils.cpp.o: src/text_utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textrank/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/segment.dir/src/text_utils.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/segment.dir/src/text_utils.cpp.o -c /Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/segment.dir/src/text_utils.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/segment.dir/src/text_utils.cpp.o -c /Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp
 
 CMakeFiles/segment.dir/src/text_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/segment.dir/src/text_utils.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp > CMakeFiles/segment.dir/src/text_utils.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp > CMakeFiles/segment.dir/src/text_utils.cpp.i
 
 CMakeFiles/segment.dir/src/text_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/segment.dir/src/text_utils.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp -o CMakeFiles/segment.dir/src/text_utils.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp -o CMakeFiles/segment.dir/src/text_utils.cpp.s
 
 # Object files for target segment
 segment_OBJECTS = \
-"CMakeFiles/segment.dir/segment.cpp.o" \
 "CMakeFiles/segment.dir/src/text_utils.cpp.o"
 
 # External object files for target segment
 segment_EXTERNAL_OBJECTS =
 
-segment: CMakeFiles/segment.dir/segment.cpp.o
 segment: CMakeFiles/segment.dir/src/text_utils.cpp.o
 segment: CMakeFiles/segment.dir/build.make
 segment: CMakeFiles/segment.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhaoze/workplace/projects/textrank/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable segment"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable segment"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/segment.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +93,6 @@ CMakeFiles/segment.dir/clean:
 .PHONY : CMakeFiles/segment.dir/clean
 
 CMakeFiles/segment.dir/depend:
-	cd /Users/zhaoze/workplace/projects/textrank && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zhaoze/workplace/projects/textrank /Users/zhaoze/workplace/projects/textrank /Users/zhaoze/workplace/projects/textrank /Users/zhaoze/workplace/projects/textrank /Users/zhaoze/workplace/projects/textrank/CMakeFiles/segment.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zhaoze/workplace/projects/textSummary && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zhaoze/workplace/projects/textSummary /Users/zhaoze/workplace/projects/textSummary /Users/zhaoze/workplace/projects/textSummary /Users/zhaoze/workplace/projects/textSummary /Users/zhaoze/workplace/projects/textSummary/CMakeFiles/segment.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/segment.dir/depend
 

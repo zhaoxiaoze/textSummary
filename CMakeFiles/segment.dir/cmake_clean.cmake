@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/segment.dir/segment.cpp.o"
   "CMakeFiles/segment.dir/src/text_utils.cpp.o"
   "segment"
   "segment.pdb"

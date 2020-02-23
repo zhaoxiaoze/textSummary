@@ -8,119 +8,163 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/zhaoze/workplace/projects/textrank"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/zhaoze/workplace/projects/textrank"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/zhaoze/workplace/projects/textrank"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="segment">
-				<Option output="/Users/zhaoze/workplace/projects/textrank/segment" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhaoze/workplace/projects/textrank"/>
+			<Target title="keyword">
+				<Option output="/Users/zhaoze/workplace/projects/textSummary/keyword" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 segment"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 keyword"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="segment/fast">
-				<Option output="/Users/zhaoze/workplace/projects/textrank/segment" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhaoze/workplace/projects/textrank"/>
+			<Target title="keyword/fast">
+				<Option output="/Users/zhaoze/workplace/projects/textSummary/keyword" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 segment/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 keyword/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="textrank">
-				<Option output="/Users/zhaoze/workplace/projects/textrank/textrank" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhaoze/workplace/projects/textrank"/>
+			<Target title="text">
+				<Option output="/Users/zhaoze/workplace/projects/textSummary/text" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 textrank"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 text"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="textrank/fast">
-				<Option output="/Users/zhaoze/workplace/projects/textrank/textrank" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhaoze/workplace/projects/textrank"/>
+			<Target title="text/fast">
+				<Option output="/Users/zhaoze/workplace/projects/textSummary/text" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 textrank/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textrank/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 text/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="keysentence">
+				<Option output="/Users/zhaoze/workplace/projects/textSummary/keysentence" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 keysentence"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="keysentence/fast">
+				<Option output="/Users/zhaoze/workplace/projects/textSummary/keysentence" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 keysentence/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhaoze/workplace/projects/textrank/segment.cpp">
-			<Option target="segment"/>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/keysentence.cpp">
+			<Option target="keysentence"/>
 		</Unit>
-		<Unit filename="/Users/zhaoze/workplace/projects/textrank/src/main.cpp">
-			<Option target="textrank"/>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/keyword.cpp">
+			<Option target="keyword"/>
 		</Unit>
-		<Unit filename="/Users/zhaoze/workplace/projects/textrank/src/sentence_rank.cpp">
-			<Option target="textrank"/>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.cpp">
+			<Option target="keyword"/>
+			<Option target="text"/>
+			<Option target="keysentence"/>
 		</Unit>
-		<Unit filename="/Users/zhaoze/workplace/projects/textrank/src/sentence_rank.h">
-			<Option target="textrank"/>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.h">
+			<Option target="keyword"/>
+			<Option target="text"/>
+			<Option target="keysentence"/>
 		</Unit>
-		<Unit filename="/Users/zhaoze/workplace/projects/textrank/src/text_rank.cpp">
-			<Option target="textrank"/>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/text_rank.cpp">
+			<Option target="keyword"/>
+			<Option target="text"/>
+			<Option target="keysentence"/>
 		</Unit>
-		<Unit filename="/Users/zhaoze/workplace/projects/textrank/src/text_rank.h">
-			<Option target="textrank"/>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/text_rank.h">
+			<Option target="keyword"/>
+			<Option target="text"/>
+			<Option target="keysentence"/>
 		</Unit>
-		<Unit filename="/Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp">
-			<Option target="segment"/>
-			<Option target="textrank"/>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp">
+			<Option target="keyword"/>
+			<Option target="text"/>
+			<Option target="keysentence"/>
 		</Unit>
-		<Unit filename="/Users/zhaoze/workplace/projects/textrank/src/text_utils.h">
-			<Option target="segment"/>
-			<Option target="textrank"/>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/text_utils.h">
+			<Option target="keyword"/>
+			<Option target="text"/>
+			<Option target="keysentence"/>
 		</Unit>
-		<Unit filename="/Users/zhaoze/workplace/projects/textrank/CMakeLists.txt">
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/summary.cpp">
+			<Option target="text"/>
+		</Unit>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/summary.h">
+			<Option target="text"/>
+		</Unit>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

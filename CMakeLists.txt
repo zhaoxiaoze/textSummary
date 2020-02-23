@@ -12,11 +12,11 @@ IF(APPLE) # mac os
 endif()
 
 AUX_SOURCE_DIRECTORY(./src DIR_SRCS)
-<<<<<<< Updated upstream
+
 ADD_EXECUTABLE(keysentence keysentence.cpp ${DIR_SRCS})
+
+
+ADD_EXECUTABLE(text summary.cpp ${DIR_SRCS})
 ADD_EXECUTABLE(keyword keyword.cpp ${DIR_SRCS})
-=======
-ADD_EXECUTABLE(textrank ${DIR_SRCS})
-ADD_EXECUTABLE(keyword KeyWord.cpp ${DIR_SRCS})
->>>>>>> Stashed changes
-ADD_EXECUTABLE(segment segment.cpp ./src/text_utils.cpp)
+
+

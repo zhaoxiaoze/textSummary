@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zhaoze/workplace/projects/textrank
+CMAKE_SOURCE_DIR = /Users/zhaoze/workplace/projects/textSummary
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textrank
+CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textSummary
 
 # Include any dependencies generated for this target.
 include CMakeFiles/keysentence.dir/depend.make
@@ -59,55 +59,55 @@ include CMakeFiles/keysentence.dir/flags.make
 
 CMakeFiles/keysentence.dir/keysentence.cpp.o: CMakeFiles/keysentence.dir/flags.make
 CMakeFiles/keysentence.dir/keysentence.cpp.o: keysentence.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textrank/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/keysentence.dir/keysentence.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/keysentence.dir/keysentence.cpp.o -c /Users/zhaoze/workplace/projects/textrank/keysentence.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/keysentence.dir/keysentence.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/keysentence.dir/keysentence.cpp.o -c /Users/zhaoze/workplace/projects/textSummary/keysentence.cpp
 
 CMakeFiles/keysentence.dir/keysentence.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/keysentence.dir/keysentence.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textrank/keysentence.cpp > CMakeFiles/keysentence.dir/keysentence.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textSummary/keysentence.cpp > CMakeFiles/keysentence.dir/keysentence.cpp.i
 
 CMakeFiles/keysentence.dir/keysentence.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/keysentence.dir/keysentence.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textrank/keysentence.cpp -o CMakeFiles/keysentence.dir/keysentence.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textSummary/keysentence.cpp -o CMakeFiles/keysentence.dir/keysentence.cpp.s
 
 CMakeFiles/keysentence.dir/src/sentence_rank.cpp.o: CMakeFiles/keysentence.dir/flags.make
 CMakeFiles/keysentence.dir/src/sentence_rank.cpp.o: src/sentence_rank.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textrank/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/keysentence.dir/src/sentence_rank.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/keysentence.dir/src/sentence_rank.cpp.o -c /Users/zhaoze/workplace/projects/textrank/src/sentence_rank.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/keysentence.dir/src/sentence_rank.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/keysentence.dir/src/sentence_rank.cpp.o -c /Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.cpp
 
 CMakeFiles/keysentence.dir/src/sentence_rank.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/keysentence.dir/src/sentence_rank.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textrank/src/sentence_rank.cpp > CMakeFiles/keysentence.dir/src/sentence_rank.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.cpp > CMakeFiles/keysentence.dir/src/sentence_rank.cpp.i
 
 CMakeFiles/keysentence.dir/src/sentence_rank.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/keysentence.dir/src/sentence_rank.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textrank/src/sentence_rank.cpp -o CMakeFiles/keysentence.dir/src/sentence_rank.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.cpp -o CMakeFiles/keysentence.dir/src/sentence_rank.cpp.s
 
 CMakeFiles/keysentence.dir/src/text_rank.cpp.o: CMakeFiles/keysentence.dir/flags.make
 CMakeFiles/keysentence.dir/src/text_rank.cpp.o: src/text_rank.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textrank/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/keysentence.dir/src/text_rank.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/keysentence.dir/src/text_rank.cpp.o -c /Users/zhaoze/workplace/projects/textrank/src/text_rank.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/keysentence.dir/src/text_rank.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/keysentence.dir/src/text_rank.cpp.o -c /Users/zhaoze/workplace/projects/textSummary/src/text_rank.cpp
 
 CMakeFiles/keysentence.dir/src/text_rank.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/keysentence.dir/src/text_rank.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textrank/src/text_rank.cpp > CMakeFiles/keysentence.dir/src/text_rank.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textSummary/src/text_rank.cpp > CMakeFiles/keysentence.dir/src/text_rank.cpp.i
 
 CMakeFiles/keysentence.dir/src/text_rank.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/keysentence.dir/src/text_rank.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textrank/src/text_rank.cpp -o CMakeFiles/keysentence.dir/src/text_rank.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textSummary/src/text_rank.cpp -o CMakeFiles/keysentence.dir/src/text_rank.cpp.s
 
 CMakeFiles/keysentence.dir/src/text_utils.cpp.o: CMakeFiles/keysentence.dir/flags.make
 CMakeFiles/keysentence.dir/src/text_utils.cpp.o: src/text_utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textrank/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/keysentence.dir/src/text_utils.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/keysentence.dir/src/text_utils.cpp.o -c /Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/keysentence.dir/src/text_utils.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/keysentence.dir/src/text_utils.cpp.o -c /Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp
 
 CMakeFiles/keysentence.dir/src/text_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/keysentence.dir/src/text_utils.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp > CMakeFiles/keysentence.dir/src/text_utils.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp > CMakeFiles/keysentence.dir/src/text_utils.cpp.i
 
 CMakeFiles/keysentence.dir/src/text_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/keysentence.dir/src/text_utils.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp -o CMakeFiles/keysentence.dir/src/text_utils.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp -o CMakeFiles/keysentence.dir/src/text_utils.cpp.s
 
 # Object files for target keysentence
 keysentence_OBJECTS = \
@@ -125,7 +125,7 @@ keysentence: CMakeFiles/keysentence.dir/src/text_rank.cpp.o
 keysentence: CMakeFiles/keysentence.dir/src/text_utils.cpp.o
 keysentence: CMakeFiles/keysentence.dir/build.make
 keysentence: CMakeFiles/keysentence.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhaoze/workplace/projects/textrank/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable keysentence"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable keysentence"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/keysentence.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/keysentence.dir/clean:
 .PHONY : CMakeFiles/keysentence.dir/clean
 
 CMakeFiles/keysentence.dir/depend:
-	cd /Users/zhaoze/workplace/projects/textrank && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zhaoze/workplace/projects/textrank /Users/zhaoze/workplace/projects/textrank /Users/zhaoze/workplace/projects/textrank /Users/zhaoze/workplace/projects/textrank /Users/zhaoze/workplace/projects/textrank/CMakeFiles/keysentence.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zhaoze/workplace/projects/textSummary && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zhaoze/workplace/projects/textSummary /Users/zhaoze/workplace/projects/textSummary /Users/zhaoze/workplace/projects/textSummary /Users/zhaoze/workplace/projects/textSummary /Users/zhaoze/workplace/projects/textSummary/CMakeFiles/keysentence.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/keysentence.dir/depend
 

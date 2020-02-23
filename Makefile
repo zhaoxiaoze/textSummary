@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zhaoze/workplace/projects/textrank
+CMAKE_SOURCE_DIR = /Users/zhaoze/workplace/projects/textSummary
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textrank
+CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textSummary
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textrank
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CMake.app/Contents/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/Applications/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textrank/CMakeFiles /Users/zhaoze/workplace/projects/textrank/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles /Users/zhaoze/workplace/projects/textSummary/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textrank/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,22 +111,7 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named segment
-
-# Build rule for target.
-segment: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 segment
-.PHONY : segment
-
-# fast build rule for target.
-segment/fast:
-	$(MAKE) -f CMakeFiles/segment.dir/build.make CMakeFiles/segment.dir/build
-.PHONY : segment/fast
-
-#=============================================================================
 # Target rules for targets named keyword
-<<<<<<< Updated upstream
-=======
 
 # Build rule for target.
 keyword: cmake_check_build_system
@@ -139,18 +124,17 @@ keyword/fast:
 .PHONY : keyword/fast
 
 #=============================================================================
-# Target rules for targets named textrank
->>>>>>> Stashed changes
+# Target rules for targets named text
 
 # Build rule for target.
-keyword: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 keyword
-.PHONY : keyword
+text: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 text
+.PHONY : text
 
 # fast build rule for target.
-keyword/fast:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/build
-.PHONY : keyword/fast
+text/fast:
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/build
+.PHONY : text/fast
 
 #=============================================================================
 # Target rules for targets named keysentence
@@ -219,93 +203,6 @@ keyword.cpp.s:
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/keyword.cpp.s
 .PHONY : keyword.cpp.s
 
-KeyWord.o: KeyWord.cpp.o
-
-.PHONY : KeyWord.o
-
-# target to build an object file
-KeyWord.cpp.o:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/KeyWord.cpp.o
-.PHONY : KeyWord.cpp.o
-
-KeyWord.i: KeyWord.cpp.i
-
-.PHONY : KeyWord.i
-
-# target to preprocess a source file
-KeyWord.cpp.i:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/KeyWord.cpp.i
-.PHONY : KeyWord.cpp.i
-
-KeyWord.s: KeyWord.cpp.s
-
-.PHONY : KeyWord.s
-
-# target to generate assembly for a file
-KeyWord.cpp.s:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/KeyWord.cpp.s
-.PHONY : KeyWord.cpp.s
-
-segment.o: segment.cpp.o
-
-.PHONY : segment.o
-
-# target to build an object file
-segment.cpp.o:
-	$(MAKE) -f CMakeFiles/segment.dir/build.make CMakeFiles/segment.dir/segment.cpp.o
-.PHONY : segment.cpp.o
-
-segment.i: segment.cpp.i
-
-.PHONY : segment.i
-
-# target to preprocess a source file
-segment.cpp.i:
-	$(MAKE) -f CMakeFiles/segment.dir/build.make CMakeFiles/segment.dir/segment.cpp.i
-.PHONY : segment.cpp.i
-
-segment.s: segment.cpp.s
-
-.PHONY : segment.s
-
-# target to generate assembly for a file
-segment.cpp.s:
-	$(MAKE) -f CMakeFiles/segment.dir/build.make CMakeFiles/segment.dir/segment.cpp.s
-.PHONY : segment.cpp.s
-
-<<<<<<< Updated upstream
-=======
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/main.cpp.o
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/main.cpp.i
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/main.cpp.s
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
->>>>>>> Stashed changes
 src/sentence_rank.o: src/sentence_rank.cpp.o
 
 .PHONY : src/sentence_rank.o
@@ -313,11 +210,8 @@ src/sentence_rank.o: src/sentence_rank.cpp.o
 # target to build an object file
 src/sentence_rank.cpp.o:
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.o
-<<<<<<< Updated upstream
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/sentence_rank.cpp.o
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/sentence_rank.cpp.o
-=======
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/sentence_rank.cpp.o
->>>>>>> Stashed changes
 .PHONY : src/sentence_rank.cpp.o
 
 src/sentence_rank.i: src/sentence_rank.cpp.i
@@ -327,11 +221,8 @@ src/sentence_rank.i: src/sentence_rank.cpp.i
 # target to preprocess a source file
 src/sentence_rank.cpp.i:
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.i
-<<<<<<< Updated upstream
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/sentence_rank.cpp.i
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/sentence_rank.cpp.i
-=======
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/sentence_rank.cpp.i
->>>>>>> Stashed changes
 .PHONY : src/sentence_rank.cpp.i
 
 src/sentence_rank.s: src/sentence_rank.cpp.s
@@ -341,11 +232,8 @@ src/sentence_rank.s: src/sentence_rank.cpp.s
 # target to generate assembly for a file
 src/sentence_rank.cpp.s:
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.s
-<<<<<<< Updated upstream
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/sentence_rank.cpp.s
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/sentence_rank.cpp.s
-=======
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/sentence_rank.cpp.s
->>>>>>> Stashed changes
 .PHONY : src/sentence_rank.cpp.s
 
 src/text_rank.o: src/text_rank.cpp.o
@@ -355,11 +243,8 @@ src/text_rank.o: src/text_rank.cpp.o
 # target to build an object file
 src/text_rank.cpp.o:
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.o
-<<<<<<< Updated upstream
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_rank.cpp.o
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_rank.cpp.o
-=======
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/text_rank.cpp.o
->>>>>>> Stashed changes
 .PHONY : src/text_rank.cpp.o
 
 src/text_rank.i: src/text_rank.cpp.i
@@ -369,11 +254,8 @@ src/text_rank.i: src/text_rank.cpp.i
 # target to preprocess a source file
 src/text_rank.cpp.i:
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.i
-<<<<<<< Updated upstream
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_rank.cpp.i
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_rank.cpp.i
-=======
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/text_rank.cpp.i
->>>>>>> Stashed changes
 .PHONY : src/text_rank.cpp.i
 
 src/text_rank.s: src/text_rank.cpp.s
@@ -383,11 +265,8 @@ src/text_rank.s: src/text_rank.cpp.s
 # target to generate assembly for a file
 src/text_rank.cpp.s:
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.s
-<<<<<<< Updated upstream
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_rank.cpp.s
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_rank.cpp.s
-=======
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/text_rank.cpp.s
->>>>>>> Stashed changes
 .PHONY : src/text_rank.cpp.s
 
 src/text_utils.o: src/text_utils.cpp.o
@@ -396,13 +275,9 @@ src/text_utils.o: src/text_utils.cpp.o
 
 # target to build an object file
 src/text_utils.cpp.o:
-	$(MAKE) -f CMakeFiles/segment.dir/build.make CMakeFiles/segment.dir/src/text_utils.cpp.o
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.o
-<<<<<<< Updated upstream
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_utils.cpp.o
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_utils.cpp.o
-=======
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/text_utils.cpp.o
->>>>>>> Stashed changes
 .PHONY : src/text_utils.cpp.o
 
 src/text_utils.i: src/text_utils.cpp.i
@@ -411,13 +286,9 @@ src/text_utils.i: src/text_utils.cpp.i
 
 # target to preprocess a source file
 src/text_utils.cpp.i:
-	$(MAKE) -f CMakeFiles/segment.dir/build.make CMakeFiles/segment.dir/src/text_utils.cpp.i
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.i
-<<<<<<< Updated upstream
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_utils.cpp.i
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_utils.cpp.i
-=======
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/text_utils.cpp.i
->>>>>>> Stashed changes
 .PHONY : src/text_utils.cpp.i
 
 src/text_utils.s: src/text_utils.cpp.s
@@ -426,14 +297,37 @@ src/text_utils.s: src/text_utils.cpp.s
 
 # target to generate assembly for a file
 src/text_utils.cpp.s:
-	$(MAKE) -f CMakeFiles/segment.dir/build.make CMakeFiles/segment.dir/src/text_utils.cpp.s
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.s
-<<<<<<< Updated upstream
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_utils.cpp.s
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_utils.cpp.s
-=======
-	$(MAKE) -f CMakeFiles/textrank.dir/build.make CMakeFiles/textrank.dir/src/text_utils.cpp.s
->>>>>>> Stashed changes
 .PHONY : src/text_utils.cpp.s
+
+summary.o: summary.cpp.o
+
+.PHONY : summary.o
+
+# target to build an object file
+summary.cpp.o:
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/summary.cpp.o
+.PHONY : summary.cpp.o
+
+summary.i: summary.cpp.i
+
+.PHONY : summary.i
+
+# target to preprocess a source file
+summary.cpp.i:
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/summary.cpp.i
+.PHONY : summary.cpp.i
+
+summary.s: summary.cpp.s
+
+.PHONY : summary.s
+
+# target to generate assembly for a file
+summary.cpp.s:
+	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/summary.cpp.s
+.PHONY : summary.cpp.s
 
 # Help Target
 help:
@@ -443,9 +337,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... segment"
 	@echo "... keyword"
-<<<<<<< Updated upstream
+	@echo "... text"
 	@echo "... keysentence"
 	@echo "... keysentence.o"
 	@echo "... keysentence.i"
@@ -453,15 +346,6 @@ help:
 	@echo "... keyword.o"
 	@echo "... keyword.i"
 	@echo "... keyword.s"
-=======
-	@echo "... textrank"
-	@echo "... KeyWord.o"
-	@echo "... KeyWord.i"
-	@echo "... KeyWord.s"
->>>>>>> Stashed changes
-	@echo "... segment.o"
-	@echo "... segment.i"
-	@echo "... segment.s"
 	@echo "... src/sentence_rank.o"
 	@echo "... src/sentence_rank.i"
 	@echo "... src/sentence_rank.s"
@@ -471,6 +355,9 @@ help:
 	@echo "... src/text_utils.o"
 	@echo "... src/text_utils.i"
 	@echo "... src/text_utils.s"
+	@echo "... summary.o"
+	@echo "... summary.i"
+	@echo "... summary.s"
 .PHONY : help
 
 

@@ -6,23 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhaoze/workplace/projects/textrank/src/main.cpp
+/Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.cpp
 iostream
 -
-fstream
+algorithm
 -
-sstream
+math.h
 -
-cstdlib
+cctype
+-
+iterator
+-
+sentence_rank.h
+/Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.h
+
+/Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.h
+string
+-
+vector
+-
+map
+-
+set
+-
+
+/Users/zhaoze/workplace/projects/textSummary/src/text_rank.cpp
+iostream
+-
+algorithm
+-
+math.h
+-
+cctype
 -
 text_rank.h
-/Users/zhaoze/workplace/projects/textrank/src/text_rank.h
-sentence_rank.h
-/Users/zhaoze/workplace/projects/textrank/src/sentence_rank.h
-text_utils.h
-/Users/zhaoze/workplace/projects/textrank/src/text_utils.h
+/Users/zhaoze/workplace/projects/textSummary/src/text_rank.h
 
-/Users/zhaoze/workplace/projects/textrank/src/sentence_rank.h
+/Users/zhaoze/workplace/projects/textSummary/src/text_rank.h
 string
 -
 vector
@@ -32,17 +52,7 @@ map
 set
 -
 
-/Users/zhaoze/workplace/projects/textrank/src/text_rank.h
-string
--
-vector
--
-map
--
-set
--
-
-/Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp
+/Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp
 iostream
 -
 vector
@@ -54,9 +64,9 @@ sstream
 cctype
 -
 text_utils.h
-/Users/zhaoze/workplace/projects/textrank/src/text_utils.h
+/Users/zhaoze/workplace/projects/textSummary/src/text_utils.h
 
-/Users/zhaoze/workplace/projects/textrank/src/text_utils.h
+/Users/zhaoze/workplace/projects/textSummary/src/text_utils.h
 string
 -
 map

@@ -4,10 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zhaoze/workplace/projects/textrank/src/main.cpp" "/Users/zhaoze/workplace/projects/textrank/CMakeFiles/textrank.dir/src/main.cpp.o"
-  "/Users/zhaoze/workplace/projects/textrank/src/sentence_rank.cpp" "/Users/zhaoze/workplace/projects/textrank/CMakeFiles/textrank.dir/src/sentence_rank.cpp.o"
-  "/Users/zhaoze/workplace/projects/textrank/src/text_rank.cpp" "/Users/zhaoze/workplace/projects/textrank/CMakeFiles/textrank.dir/src/text_rank.cpp.o"
-  "/Users/zhaoze/workplace/projects/textrank/src/text_utils.cpp" "/Users/zhaoze/workplace/projects/textrank/CMakeFiles/textrank.dir/src/text_utils.cpp.o"
+  "/Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.cpp" "/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/textrank.dir/src/sentence_rank.cpp.o"
+  "/Users/zhaoze/workplace/projects/textSummary/src/text_rank.cpp" "/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/textrank.dir/src/text_rank.cpp.o"
+  "/Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp" "/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/textrank.dir/src/text_utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

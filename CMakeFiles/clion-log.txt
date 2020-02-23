@@ -1,8 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /Users/zhaoze/workplace/projects/textSummary
-CMake Error at CMakeLists.txt:15:
-  Parse error.  Expected a command name, got unquoted argument with text
-  "<<<<<<<".
-
-
--- Configuring incomplete, errors occurred!
-See also "/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/CMakeOutput.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/zhaoze/workplace/projects/textSummary

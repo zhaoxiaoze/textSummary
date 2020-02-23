@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/keyword.dir/KeyWord.cpp.o"
-  "CMakeFiles/keyword.dir/src/main.cpp.o"
+  "CMakeFiles/keyword.dir/keyword.cpp.o"
   "CMakeFiles/keyword.dir/src/sentence_rank.cpp.o"
   "CMakeFiles/keyword.dir/src/text_rank.cpp.o"
   "CMakeFiles/keyword.dir/src/text_utils.cpp.o"
