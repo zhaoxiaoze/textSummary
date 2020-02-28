@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textSummary
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CMake.app/Contents/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/Applications/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named keysentence
+
+# Build rule for target.
+keysentence: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 keysentence
+.PHONY : keysentence
+
+# fast build rule for target.
+keysentence/fast:
+	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/build
+.PHONY : keysentence/fast
+
+#=============================================================================
 # Target rules for targets named keyword
 
 # Build rule for target.
@@ -124,30 +137,30 @@ keyword/fast:
 .PHONY : keyword/fast
 
 #=============================================================================
-# Target rules for targets named text
+# Target rules for targets named test
 
 # Build rule for target.
-text: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 text
-.PHONY : text
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-text/fast:
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/build
-.PHONY : text/fast
+test/fast:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 #=============================================================================
-# Target rules for targets named keysentence
+# Target rules for targets named fromtext
 
 # Build rule for target.
-keysentence: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 keysentence
-.PHONY : keysentence
+fromtext: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fromtext
+.PHONY : fromtext
 
 # fast build rule for target.
-keysentence/fast:
-	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/build
-.PHONY : keysentence/fast
+fromtext/fast:
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/build
+.PHONY : fromtext/fast
 
 keysentence.o: keysentence.cpp.o
 
@@ -209,9 +222,10 @@ src/sentence_rank.o: src/sentence_rank.cpp.o
 
 # target to build an object file
 src/sentence_rank.cpp.o:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.o
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/sentence_rank.cpp.o
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/sentence_rank.cpp.o
+	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/sentence_rank.cpp.o
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/sentence_rank.cpp.o
 .PHONY : src/sentence_rank.cpp.o
 
 src/sentence_rank.i: src/sentence_rank.cpp.i
@@ -220,9 +234,10 @@ src/sentence_rank.i: src/sentence_rank.cpp.i
 
 # target to preprocess a source file
 src/sentence_rank.cpp.i:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.i
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/sentence_rank.cpp.i
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/sentence_rank.cpp.i
+	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/sentence_rank.cpp.i
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/sentence_rank.cpp.i
 .PHONY : src/sentence_rank.cpp.i
 
 src/sentence_rank.s: src/sentence_rank.cpp.s
@@ -231,9 +246,10 @@ src/sentence_rank.s: src/sentence_rank.cpp.s
 
 # target to generate assembly for a file
 src/sentence_rank.cpp.s:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.s
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/sentence_rank.cpp.s
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/sentence_rank.cpp.s
+	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/sentence_rank.cpp.s
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/sentence_rank.cpp.s
 .PHONY : src/sentence_rank.cpp.s
 
 src/text_rank.o: src/text_rank.cpp.o
@@ -242,9 +258,10 @@ src/text_rank.o: src/text_rank.cpp.o
 
 # target to build an object file
 src/text_rank.cpp.o:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.o
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_rank.cpp.o
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_rank.cpp.o
+	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_rank.cpp.o
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_rank.cpp.o
 .PHONY : src/text_rank.cpp.o
 
 src/text_rank.i: src/text_rank.cpp.i
@@ -253,9 +270,10 @@ src/text_rank.i: src/text_rank.cpp.i
 
 # target to preprocess a source file
 src/text_rank.cpp.i:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.i
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_rank.cpp.i
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_rank.cpp.i
+	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_rank.cpp.i
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_rank.cpp.i
 .PHONY : src/text_rank.cpp.i
 
 src/text_rank.s: src/text_rank.cpp.s
@@ -264,9 +282,10 @@ src/text_rank.s: src/text_rank.cpp.s
 
 # target to generate assembly for a file
 src/text_rank.cpp.s:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.s
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_rank.cpp.s
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_rank.cpp.s
+	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_rank.cpp.s
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_rank.cpp.s
 .PHONY : src/text_rank.cpp.s
 
 src/text_utils.o: src/text_utils.cpp.o
@@ -275,9 +294,10 @@ src/text_utils.o: src/text_utils.cpp.o
 
 # target to build an object file
 src/text_utils.cpp.o:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.o
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_utils.cpp.o
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_utils.cpp.o
+	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_utils.cpp.o
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_utils.cpp.o
 .PHONY : src/text_utils.cpp.o
 
 src/text_utils.i: src/text_utils.cpp.i
@@ -286,9 +306,10 @@ src/text_utils.i: src/text_utils.cpp.i
 
 # target to preprocess a source file
 src/text_utils.cpp.i:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.i
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_utils.cpp.i
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_utils.cpp.i
+	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_utils.cpp.i
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_utils.cpp.i
 .PHONY : src/text_utils.cpp.i
 
 src/text_utils.s: src/text_utils.cpp.s
@@ -297,37 +318,65 @@ src/text_utils.s: src/text_utils.cpp.s
 
 # target to generate assembly for a file
 src/text_utils.cpp.s:
-	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.s
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/src/text_utils.cpp.s
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_utils.cpp.s
+	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_utils.cpp.s
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_utils.cpp.s
 .PHONY : src/text_utils.cpp.s
 
-summary.o: summary.cpp.o
+summary_fromtext.o: summary_fromtext.cpp.o
 
-.PHONY : summary.o
+.PHONY : summary_fromtext.o
 
 # target to build an object file
-summary.cpp.o:
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/summary.cpp.o
-.PHONY : summary.cpp.o
+summary_fromtext.cpp.o:
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/summary_fromtext.cpp.o
+.PHONY : summary_fromtext.cpp.o
 
-summary.i: summary.cpp.i
+summary_fromtext.i: summary_fromtext.cpp.i
 
-.PHONY : summary.i
+.PHONY : summary_fromtext.i
 
 # target to preprocess a source file
-summary.cpp.i:
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/summary.cpp.i
-.PHONY : summary.cpp.i
+summary_fromtext.cpp.i:
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/summary_fromtext.cpp.i
+.PHONY : summary_fromtext.cpp.i
 
-summary.s: summary.cpp.s
+summary_fromtext.s: summary_fromtext.cpp.s
 
-.PHONY : summary.s
+.PHONY : summary_fromtext.s
 
 # target to generate assembly for a file
-summary.cpp.s:
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/summary.cpp.s
-.PHONY : summary.cpp.s
+summary_fromtext.cpp.s:
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/summary_fromtext.cpp.s
+.PHONY : summary_fromtext.cpp.s
+
+test.o: test.cpp.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -336,10 +385,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... keyword"
-	@echo "... text"
 	@echo "... keysentence"
+	@echo "... keyword"
+	@echo "... test"
+	@echo "... edit_cache"
+	@echo "... fromtext"
 	@echo "... keysentence.o"
 	@echo "... keysentence.i"
 	@echo "... keysentence.s"
@@ -355,9 +405,12 @@ help:
 	@echo "... src/text_utils.o"
 	@echo "... src/text_utils.i"
 	@echo "... src/text_utils.s"
-	@echo "... summary.o"
-	@echo "... summary.i"
-	@echo "... summary.s"
+	@echo "... summary_fromtext.o"
+	@echo "... summary_fromtext.i"
+	@echo "... summary_fromtext.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

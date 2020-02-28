@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.cpp" "/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/text.dir/src/sentence_rank.cpp.o"
   "/Users/zhaoze/workplace/projects/textSummary/src/text_rank.cpp" "/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/text.dir/src/text_rank.cpp.o"
   "/Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp" "/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/text.dir/src/text_utils.cpp.o"
-  "/Users/zhaoze/workplace/projects/textSummary/summary.cpp" "/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/text.dir/summary.cpp.o"
+  "/Users/zhaoze/workplace/projects/textSummary/test.cpp" "/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/text.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

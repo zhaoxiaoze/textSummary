@@ -10,7 +10,7 @@ CMakeFiles/text.dir/src/text_rank.cpp.o
 CMakeFiles/text.dir/src/text_utils.cpp.o
  /Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp
  /Users/zhaoze/workplace/projects/textSummary/src/text_utils.h
-CMakeFiles/text.dir/summary.cpp.o
+CMakeFiles/text.dir/test.cpp.o
  /Users/zhaoze/workplace/projects/textSummary/cppjieba/src/DictTrie.hpp
  /Users/zhaoze/workplace/projects/textSummary/cppjieba/src/HMMSegment.hpp
  /Users/zhaoze/workplace/projects/textSummary/cppjieba/src/ISegment.hpp
@@ -31,3 +31,4 @@ CMakeFiles/text.dir/summary.cpp.o
  /Users/zhaoze/workplace/projects/textSummary/src/text_utils.h
  /Users/zhaoze/workplace/projects/textSummary/summary.cpp
  /Users/zhaoze/workplace/projects/textSummary/summary.h
+ /Users/zhaoze/workplace/projects/textSummary/test.cpp

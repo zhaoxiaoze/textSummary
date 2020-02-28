@@ -254,20 +254,6 @@ cppjieba/src/PosTagger.hpp
 src/text_utils.h
 /Users/zhaoze/workplace/projects/textSummary/src/text_utils.h
 
-/Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.cpp
-iostream
--
-algorithm
--
-math.h
--
-cctype
--
-iterator
--
-sentence_rank.h
-/Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.h
-
 /Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.h
 string
 -
@@ -278,18 +264,6 @@ map
 set
 -
 
-/Users/zhaoze/workplace/projects/textSummary/src/text_rank.cpp
-iostream
--
-algorithm
--
-math.h
--
-cctype
--
-text_rank.h
-/Users/zhaoze/workplace/projects/textSummary/src/text_rank.h
-
 /Users/zhaoze/workplace/projects/textSummary/src/text_rank.h
 string
 -
@@ -299,20 +273,6 @@ map
 -
 set
 -
-
-/Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp
-iostream
--
-vector
--
-algorithm
--
-sstream
--
-cctype
--
-text_utils.h
-/Users/zhaoze/workplace/projects/textSummary/src/text_utils.h
 
 /Users/zhaoze/workplace/projects/textSummary/src/text_utils.h
 string

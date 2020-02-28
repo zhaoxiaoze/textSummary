@@ -4,7 +4,6 @@
 #include "src/text_utils.h"
 #include <cctype>
 #include "cppjieba/src/PosTagger.hpp"
-#include "src/text_utils.h"
 #include "summary.h"
 
 using namespace std;
@@ -14,7 +13,7 @@ const char * const JIEBA_DICT_FILE = "cppjieba/dict/jieba.dict.utf8";
 const char * const HMM_DICT_FILE = "cppjieba/dict/hmm_model.utf8";
 const char * const USER_DICT_FILE = "cppjieba/dict/user.dict.utf8";
 
-void Keyword(string text,vector<string> &result) {
+void Summary::Keyword(string text, vector<string> &result) {
 
     int text_field = 1;
     PosTagger tagger(JIEBA_DICT_FILE, HMM_DICT_FILE, USER_DICT_FILE);
@@ -112,7 +111,7 @@ void Keyword(string text,vector<string> &result) {
 
 }
 
-void Keysentence(string text,vector<string> &result)
+void Summary::Keysentence(string text, vector<string> &result)
 {
 
     int text_field = 1;

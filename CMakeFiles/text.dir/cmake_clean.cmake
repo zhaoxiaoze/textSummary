@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/text.dir/src/sentence_rank.cpp.o"
   "CMakeFiles/text.dir/src/text_rank.cpp.o"
   "CMakeFiles/text.dir/src/text_utils.cpp.o"
-  "CMakeFiles/text.dir/summary.cpp.o"
+  "CMakeFiles/text.dir/test.cpp.o"
   "text"
   "text.pdb"
 )

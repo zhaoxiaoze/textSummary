@@ -6,6 +6,16 @@ default_target: all
 
 .PHONY : default_target
 
+# The main recursive all target
+all:
+
+.PHONY : all
+
+# The main recursive preinstall target
+preinstall:
+
+.PHONY : preinstall
+
 #=============================================================================
 # Special targets provided by cmake.
 
@@ -35,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -52,24 +62,45 @@ CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textSummary
 #=============================================================================
 # Directory level rules for the build root directory
 
-# The main recursive "all" target.
-all: CMakeFiles/keyword.dir/all
-all: CMakeFiles/text.dir/all
+# The main recursive "clean" target.
+clean: CMakeFiles/keysentence.dir/clean
+clean: CMakeFiles/keyword.dir/clean
+clean: CMakeFiles/test.dir/clean
+clean: CMakeFiles/fromtext.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/keysentence.dir
+
+# All Build rule for target.
+CMakeFiles/keysentence.dir/all:
+	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/depend
+	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=6,7,8,9,10 "Built target keysentence"
+.PHONY : CMakeFiles/keysentence.dir/all
+
+# Include target in all.
 all: CMakeFiles/keysentence.dir/all
 
 .PHONY : all
 
-# The main recursive "clean" target.
-clean: CMakeFiles/keyword.dir/clean
-clean: CMakeFiles/text.dir/clean
-clean: CMakeFiles/keysentence.dir/clean
+# Build rule for subdir invocation for target.
+CMakeFiles/keysentence.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/keysentence.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 0
+.PHONY : CMakeFiles/keysentence.dir/rule
 
-.PHONY : clean
+# Convenience name for target.
+keysentence: CMakeFiles/keysentence.dir/rule
 
-# The main recursive "preinstall" target.
-preinstall:
+.PHONY : keysentence
 
-.PHONY : preinstall
+# clean rule for target.
+CMakeFiles/keysentence.dir/clean:
+	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/clean
+.PHONY : CMakeFiles/keysentence.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/keyword.dir
@@ -78,8 +109,13 @@ preinstall:
 CMakeFiles/keyword.dir/all:
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/depend
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=6,7,8,9,10 "Built target keyword"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=11,12,13,14,15 "Built target keyword"
 .PHONY : CMakeFiles/keyword.dir/all
+
+# Include target in all.
+all: CMakeFiles/keyword.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/keyword.dir/rule: cmake_check_build_system
@@ -99,58 +135,68 @@ CMakeFiles/keyword.dir/clean:
 .PHONY : CMakeFiles/keyword.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/text.dir
+# Target rules for target CMakeFiles/test.dir
 
 # All Build rule for target.
-CMakeFiles/text.dir/all:
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/depend
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=11,12,13,14,15 "Built target text"
-.PHONY : CMakeFiles/text.dir/all
+CMakeFiles/test.dir/all:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=16,17,18,19,20 "Built target test"
+.PHONY : CMakeFiles/test.dir/all
+
+# Include target in all.
+all: CMakeFiles/test.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/text.dir/rule: cmake_check_build_system
+CMakeFiles/test.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/text.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 0
-.PHONY : CMakeFiles/text.dir/rule
+.PHONY : CMakeFiles/test.dir/rule
 
 # Convenience name for target.
-text: CMakeFiles/text.dir/rule
+test: CMakeFiles/test.dir/rule
 
-.PHONY : text
+.PHONY : test
 
 # clean rule for target.
-CMakeFiles/text.dir/clean:
-	$(MAKE) -f CMakeFiles/text.dir/build.make CMakeFiles/text.dir/clean
-.PHONY : CMakeFiles/text.dir/clean
+CMakeFiles/test.dir/clean:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
+.PHONY : CMakeFiles/test.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/keysentence.dir
+# Target rules for target CMakeFiles/fromtext.dir
 
 # All Build rule for target.
-CMakeFiles/keysentence.dir/all:
-	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/depend
-	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=1,2,3,4,5 "Built target keysentence"
-.PHONY : CMakeFiles/keysentence.dir/all
+CMakeFiles/fromtext.dir/all:
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/depend
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=1,2,3,4,5 "Built target fromtext"
+.PHONY : CMakeFiles/fromtext.dir/all
+
+# Include target in all.
+all: CMakeFiles/fromtext.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/keysentence.dir/rule: cmake_check_build_system
+CMakeFiles/fromtext.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/keysentence.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/fromtext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 0
-.PHONY : CMakeFiles/keysentence.dir/rule
+.PHONY : CMakeFiles/fromtext.dir/rule
 
 # Convenience name for target.
-keysentence: CMakeFiles/keysentence.dir/rule
+fromtext: CMakeFiles/fromtext.dir/rule
 
-.PHONY : keysentence
+.PHONY : fromtext
 
 # clean rule for target.
-CMakeFiles/keysentence.dir/clean:
-	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/clean
-.PHONY : CMakeFiles/keysentence.dir/clean
+CMakeFiles/fromtext.dir/clean:
+	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/clean
+.PHONY : CMakeFiles/fromtext.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

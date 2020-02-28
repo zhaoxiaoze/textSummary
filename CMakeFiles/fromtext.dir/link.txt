@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/fromtext.dir/summary_fromtext.cpp.o CMakeFiles/fromtext.dir/src/sentence_rank.cpp.o CMakeFiles/fromtext.dir/src/text_rank.cpp.o CMakeFiles/fromtext.dir/src/text_utils.cpp.o  -o fromtext 

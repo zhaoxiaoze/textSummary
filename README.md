@@ -5,18 +5,25 @@
 cmake ./
 make
 ```
-编译后会生成两个可执行文件: segment, textrank
+编译后会生成四个可执行文件: keysentence, keyword, fromtext, test
 
-segment分词并输出选择后的词, 输出为在输入文件最后追加一列, 用法：
+keysentence为命令行进行自动摘要, 用法：
 ```
- ./segment <input_file> <text_field> <out_file>
+ ./keysentence
 ```
+在光标处输入将要进行摘要的文章
 
-textrank抽取关键词或者关键句，输出为在输入文件最前面追加一列，用法：
+keyword为命令行进行关键词抽取，用法：
 ```
- ./textrank <input_file> <choose_field> <method> <out_file>
+./keyword
+```
+在光标处输入要进行抽取关键词的文章
+
+text文件批量处理文章
+```
+ ./fromtext <input_file>  <method> <out_file>
  <method>: 1 -> keywords; 2 -> key sentences
- <choose_field>: if keywords, set as token field; if key sentences, set as content field
+
 ```
 
 ##运行
@@ -25,10 +32,18 @@ sh run.sh
 ```
 输入文件为./data/news.u8, 格式为两列：标题，正文
 
-关键词文件为： ./data/news.word
+关键词文件为： ./results/keyword1.u8
 
-关键句文件为： ./data/news.sent
+关键句文件为： ./results/keysentence1.u8
 
-##参考
+##调用关键词关键句函数
+```#include"summary.cpp"
+```
+示例
+```    Summary::Keyword(text,keyword);
+       Summary::Keysentence(text,keysentence);
+```
+text 为 string 
+keyword\keysentence 为 vector <string>
 
-http://tangke.me/posts/2016/09/17/textranksuan-fa-shi-xian.html
+

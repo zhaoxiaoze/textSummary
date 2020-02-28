@@ -57,18 +57,18 @@ include CMakeFiles/text.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/text.dir/flags.make
 
-CMakeFiles/text.dir/summary.cpp.o: CMakeFiles/text.dir/flags.make
-CMakeFiles/text.dir/summary.cpp.o: summary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/text.dir/summary.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/text.dir/summary.cpp.o -c /Users/zhaoze/workplace/projects/textSummary/summary.cpp
+CMakeFiles/text.dir/test.cpp.o: CMakeFiles/text.dir/flags.make
+CMakeFiles/text.dir/test.cpp.o: test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/text.dir/test.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/text.dir/test.cpp.o -c /Users/zhaoze/workplace/projects/textSummary/test.cpp
 
-CMakeFiles/text.dir/summary.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/text.dir/summary.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textSummary/summary.cpp > CMakeFiles/text.dir/summary.cpp.i
+CMakeFiles/text.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/text.dir/test.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhaoze/workplace/projects/textSummary/test.cpp > CMakeFiles/text.dir/test.cpp.i
 
-CMakeFiles/text.dir/summary.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/text.dir/summary.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textSummary/summary.cpp -o CMakeFiles/text.dir/summary.cpp.s
+CMakeFiles/text.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/text.dir/test.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhaoze/workplace/projects/textSummary/test.cpp -o CMakeFiles/text.dir/test.cpp.s
 
 CMakeFiles/text.dir/src/sentence_rank.cpp.o: CMakeFiles/text.dir/flags.make
 CMakeFiles/text.dir/src/sentence_rank.cpp.o: src/sentence_rank.cpp
@@ -111,7 +111,7 @@ CMakeFiles/text.dir/src/text_utils.cpp.s: cmake_force
 
 # Object files for target text
 text_OBJECTS = \
-"CMakeFiles/text.dir/summary.cpp.o" \
+"CMakeFiles/text.dir/test.cpp.o" \
 "CMakeFiles/text.dir/src/sentence_rank.cpp.o" \
 "CMakeFiles/text.dir/src/text_rank.cpp.o" \
 "CMakeFiles/text.dir/src/text_utils.cpp.o"
@@ -119,7 +119,7 @@ text_OBJECTS = \
 # External object files for target text
 text_EXTERNAL_OBJECTS =
 
-text: CMakeFiles/text.dir/summary.cpp.o
+text: CMakeFiles/text.dir/test.cpp.o
 text: CMakeFiles/text.dir/src/sentence_rank.cpp.o
 text: CMakeFiles/text.dir/src/text_rank.cpp.o
 text: CMakeFiles/text.dir/src/text_utils.cpp.o

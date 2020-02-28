@@ -1,8 +1,12 @@
 #! /bin/bash
 
-## for keyword
-./segment data/news.u8 1 data/news.seg 
-./textSummary data/news.seg 2 1 data/news.word
 
-## for key sentence
-./textSummary data/news.seg 1 2 data/news.sent
+
+##for keyword or keysentence from txt to txt
+##keyword
+./fromtext data/news.u8 1 results/keyword1.u8
+##keysentence
+./fromtext data/news.u8 2 results/keysentence1.u8
+
+##for all based on include
+./text

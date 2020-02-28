@@ -13,10 +13,11 @@ endif()
 
 AUX_SOURCE_DIRECTORY(./src DIR_SRCS)
 
+
 ADD_EXECUTABLE(keysentence keysentence.cpp ${DIR_SRCS})
 
-
-ADD_EXECUTABLE(text summary.cpp ${DIR_SRCS})
+ADD_EXECUTABLE(fromtext summary_fromtext.cpp ${DIR_SRCS})
+ADD_EXECUTABLE(test test.cpp ${DIR_SRCS})
 ADD_EXECUTABLE(keyword keyword.cpp ${DIR_SRCS})
 
 
