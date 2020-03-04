@@ -198,7 +198,7 @@ void TextRank::CalcWordScore(const map<size_t, set<size_t> > &word_neighbors, ma
         if (max_delta < m_least_delta)
         {
 #ifdef _DEBUG
-            cout << "stop iteration when iter = " << i << '\t' << max_delta << endl; 
+            cout << "stop iteration when iter = "<<"check" << i << '\t' << max_delta << endl;
 #endif
             break;
         }
