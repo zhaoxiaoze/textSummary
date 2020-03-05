@@ -3,4 +3,5 @@
 /Users/zhaoze/workplace/projects/textSummary/CMakeFiles/keyword.dir
 /Users/zhaoze/workplace/projects/textSummary/CMakeFiles/test.dir
 /Users/zhaoze/workplace/projects/textSummary/CMakeFiles/edit_cache.dir
+/Users/zhaoze/workplace/projects/textSummary/CMakeFiles/fromtextTopN.dir
 /Users/zhaoze/workplace/projects/textSummary/CMakeFiles/fromtext.dir

@@ -150,6 +150,19 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
+# Target rules for targets named fromtextTopN
+
+# Build rule for target.
+fromtextTopN: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fromtextTopN
+.PHONY : fromtextTopN
+
+# fast build rule for target.
+fromtextTopN/fast:
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/build
+.PHONY : fromtextTopN/fast
+
+#=============================================================================
 # Target rules for targets named fromtext
 
 # Build rule for target.
@@ -225,6 +238,7 @@ src/sentence_rank.cpp.o:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/sentence_rank.cpp.o
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.o
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/sentence_rank.cpp.o
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/src/sentence_rank.cpp.o
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/sentence_rank.cpp.o
 .PHONY : src/sentence_rank.cpp.o
 
@@ -237,6 +251,7 @@ src/sentence_rank.cpp.i:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/sentence_rank.cpp.i
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.i
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/sentence_rank.cpp.i
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/src/sentence_rank.cpp.i
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/sentence_rank.cpp.i
 .PHONY : src/sentence_rank.cpp.i
 
@@ -249,6 +264,7 @@ src/sentence_rank.cpp.s:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/sentence_rank.cpp.s
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/sentence_rank.cpp.s
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/sentence_rank.cpp.s
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/src/sentence_rank.cpp.s
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/sentence_rank.cpp.s
 .PHONY : src/sentence_rank.cpp.s
 
@@ -261,6 +277,7 @@ src/text_rank.cpp.o:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_rank.cpp.o
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.o
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_rank.cpp.o
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/src/text_rank.cpp.o
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_rank.cpp.o
 .PHONY : src/text_rank.cpp.o
 
@@ -273,6 +290,7 @@ src/text_rank.cpp.i:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_rank.cpp.i
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.i
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_rank.cpp.i
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/src/text_rank.cpp.i
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_rank.cpp.i
 .PHONY : src/text_rank.cpp.i
 
@@ -285,6 +303,7 @@ src/text_rank.cpp.s:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_rank.cpp.s
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_rank.cpp.s
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_rank.cpp.s
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/src/text_rank.cpp.s
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_rank.cpp.s
 .PHONY : src/text_rank.cpp.s
 
@@ -297,6 +316,7 @@ src/text_utils.cpp.o:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_utils.cpp.o
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.o
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_utils.cpp.o
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/src/text_utils.cpp.o
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_utils.cpp.o
 .PHONY : src/text_utils.cpp.o
 
@@ -309,6 +329,7 @@ src/text_utils.cpp.i:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_utils.cpp.i
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.i
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_utils.cpp.i
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/src/text_utils.cpp.i
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_utils.cpp.i
 .PHONY : src/text_utils.cpp.i
 
@@ -321,6 +342,7 @@ src/text_utils.cpp.s:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/src/text_utils.cpp.s
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/src/text_utils.cpp.s
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/text_utils.cpp.s
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/src/text_utils.cpp.s
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/src/text_utils.cpp.s
 .PHONY : src/text_utils.cpp.s
 
@@ -350,6 +372,33 @@ summary_fromtext.s: summary_fromtext.cpp.s
 summary_fromtext.cpp.s:
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/summary_fromtext.cpp.s
 .PHONY : summary_fromtext.cpp.s
+
+summary_fromtext_topN.o: summary_fromtext_topN.cpp.o
+
+.PHONY : summary_fromtext_topN.o
+
+# target to build an object file
+summary_fromtext_topN.cpp.o:
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/summary_fromtext_topN.cpp.o
+.PHONY : summary_fromtext_topN.cpp.o
+
+summary_fromtext_topN.i: summary_fromtext_topN.cpp.i
+
+.PHONY : summary_fromtext_topN.i
+
+# target to preprocess a source file
+summary_fromtext_topN.cpp.i:
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/summary_fromtext_topN.cpp.i
+.PHONY : summary_fromtext_topN.cpp.i
+
+summary_fromtext_topN.s: summary_fromtext_topN.cpp.s
+
+.PHONY : summary_fromtext_topN.s
+
+# target to generate assembly for a file
+summary_fromtext_topN.cpp.s:
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/summary_fromtext_topN.cpp.s
+.PHONY : summary_fromtext_topN.cpp.s
 
 test.o: test.cpp.o
 
@@ -389,6 +438,7 @@ help:
 	@echo "... keyword"
 	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... fromtextTopN"
 	@echo "... fromtext"
 	@echo "... keysentence.o"
 	@echo "... keysentence.i"
@@ -408,6 +458,9 @@ help:
 	@echo "... summary_fromtext.o"
 	@echo "... summary_fromtext.i"
 	@echo "... summary_fromtext.s"
+	@echo "... summary_fromtext_topN.o"
+	@echo "... summary_fromtext_topN.i"
+	@echo "... summary_fromtext_topN.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

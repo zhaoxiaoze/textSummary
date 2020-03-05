@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textSummary
 clean: CMakeFiles/keysentence.dir/clean
 clean: CMakeFiles/keyword.dir/clean
 clean: CMakeFiles/test.dir/clean
+clean: CMakeFiles/fromtextTopN.dir/clean
 clean: CMakeFiles/fromtext.dir/clean
 
 .PHONY : clean
@@ -77,7 +78,7 @@ clean: CMakeFiles/fromtext.dir/clean
 CMakeFiles/keysentence.dir/all:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/depend
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=6,7,8,9,10 "Built target keysentence"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=11,12,13,14,15 "Built target keysentence"
 .PHONY : CMakeFiles/keysentence.dir/all
 
 # Include target in all.
@@ -109,7 +110,7 @@ CMakeFiles/keysentence.dir/clean:
 CMakeFiles/keyword.dir/all:
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/depend
 	$(MAKE) -f CMakeFiles/keyword.dir/build.make CMakeFiles/keyword.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=11,12,13,14,15 "Built target keyword"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=16,17,18,19,20 "Built target keyword"
 .PHONY : CMakeFiles/keyword.dir/all
 
 # Include target in all.
@@ -141,7 +142,7 @@ CMakeFiles/keyword.dir/clean:
 CMakeFiles/test.dir/all:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=16,17,18,19,20 "Built target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=21,22,23,24,25 "Built target test"
 .PHONY : CMakeFiles/test.dir/all
 
 # Include target in all.
@@ -165,6 +166,38 @@ test: CMakeFiles/test.dir/rule
 CMakeFiles/test.dir/clean:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
 .PHONY : CMakeFiles/test.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/fromtextTopN.dir
+
+# All Build rule for target.
+CMakeFiles/fromtextTopN.dir/all:
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/depend
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=6,7,8,9,10 "Built target fromtextTopN"
+.PHONY : CMakeFiles/fromtextTopN.dir/all
+
+# Include target in all.
+all: CMakeFiles/fromtextTopN.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fromtextTopN.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/fromtextTopN.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 0
+.PHONY : CMakeFiles/fromtextTopN.dir/rule
+
+# Convenience name for target.
+fromtextTopN: CMakeFiles/fromtextTopN.dir/rule
+
+.PHONY : fromtextTopN
+
+# clean rule for target.
+CMakeFiles/fromtextTopN.dir/clean:
+	$(MAKE) -f CMakeFiles/fromtextTopN.dir/build.make CMakeFiles/fromtextTopN.dir/clean
+.PHONY : CMakeFiles/fromtextTopN.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/fromtext.dir
