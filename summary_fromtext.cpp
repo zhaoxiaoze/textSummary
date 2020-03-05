@@ -4,6 +4,7 @@
 #include "src/text_utils.h"
 #include <cctype>
 #include "cppjieba/src/PosTagger.hpp"
+#include <ctime>
 #include "summary.h"
 
 using namespace std;
@@ -13,11 +14,12 @@ const char * const JIEBA_DICT_FILE = "cppjieba/dict/jieba.dict.utf8";
 const char * const HMM_DICT_FILE = "cppjieba/dict/hmm_model.utf8";
 const char * const USER_DICT_FILE = "cppjieba/dict/user.dict.utf8";
 
-void Keyword(string text, vector<string> &result) {
+void Keyword(string text, vector<string> &result,vector<double> &weight) {
 
     int text_field = 1;
     PosTagger tagger(JIEBA_DICT_FILE, HMM_DICT_FILE, USER_DICT_FILE);
     result.clear();
+    weight.clear();
     string line;
     line=text;
     vector<pair<string, string> > res;
@@ -95,13 +97,15 @@ void Keyword(string text, vector<string> &result) {
                 if (i != 0)
                     cout << ' ';
                 cout << keywords[i].first << '(' << keywords[i].second << ')';
+                result.push_back(keywords[i].first);
+                weight.push_back(keywords[i].second);
             }
             cout << '\t';
             for (size_t i = 0; i < keywords2.size(); ++i) {
                 if (i != 0)
                     cout << ' ';
                 cout << keywords2[i].first << '(' << keywords2[i].second << ')';
-                result.push_back(keywords2[i].first);
+                //result.push_back(keywords2[i].first);
             }
         }
     }
@@ -109,7 +113,7 @@ void Keyword(string text, vector<string> &result) {
 
 }
 
-void Keysentence(string text, vector<string> &result)
+void Keysentence(string text, vector<string> &result,vector<double> &weightsentence)
 {
 
     int text_field = 1;
@@ -197,6 +201,7 @@ void Keysentence(string text, vector<string> &result)
             }
             sent_ranker.ExtractKeySentence(sentence_token_map, key_sents, topN);
             result.clear();  //在下面清的
+            weightsentence.clear();
             for(size_t i = 0; i < key_sents.size(); ++i)
             {
                 if (i != 0)
@@ -205,6 +210,7 @@ void Keysentence(string text, vector<string> &result)
                 cout << '\n'<< endl;
                 result_sentence='\n'+key_sents[i].first;  //这句话好像没用
                 result.push_back(key_sents[i].first);
+                weightsentence.push_back(key_sents[i].second);
             }
         }
 
@@ -244,21 +250,31 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-
     if (method == 1)
     {
         string line_word;
         vector<string> result_word;
+        vector <double> wordtime;
+        vector<double> weight;
+        //clock_t startTime,endTime;
+        //int m=0;
         while(getline(fin, line_word))
         {
-            Keyword(line_word,result_word);
+            //++m;
+            //startTime = clock();
+            Keyword(line_word,result_word,weight);
             for(size_t i = 0; i < result_word.size(); ++i)
             {
                 if (i != 0)
                     fout << ' ';
                 fout << result_word[i] ;
+                //fout << weight[i]<<'\t';
             }
+            //fout<<endl;
             fout << '\t' << line_word << endl;
+            //endTime = clock();
+            //wordtime[m] = (double)(endTime - startTime) / CLOCKS_PER_SEC;
+            //fout << wordtime[m]<<endl;
         }
     }
 
@@ -266,16 +282,28 @@ int main(int argc, char *argv[])
     {
         string line_sentence;
         vector <string> result_sentence;
+        vector <double> wordtime;
+        vector <double> weightsentence;
+        //clock_t startTime,endTime;
+        //int j= 0;
         while(getline(fin, line_sentence))
         {
-            Keysentence(line_sentence,result_sentence);
+            //++j;
+            //startTime = clock();
+            Keysentence(line_sentence,result_sentence,weightsentence);
             for(size_t i = 0; i < result_sentence.size(); ++i)
             {
                 fout << i << result_sentence[i] <<'\t';
+                //fout << weightsentence[i]<<'\t';
             }
             fout << '\t' << line_sentence << endl;
+            //fout<<endl;
+            //endTime = clock();
+            //wordtime[j] = (double)(endTime - startTime) / CLOCKS_PER_SEC;
+            //fout << wordtime[j]<<endl;
         }
     }
+
     fin.close();
     fout.close();
     return 0;

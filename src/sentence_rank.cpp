@@ -117,6 +117,7 @@ void SentenceRank::BuildSentenceRelation(const map<string, vector<string> > &sen
 
 void SentenceRank::CalcSentenceScore(map<size_t, double> &score_map)
 {
+
     score_map.clear();
 
     // initialize
@@ -154,7 +155,7 @@ void SentenceRank::CalcSentenceScore(map<size_t, double> &score_map)
         if (max_delta < m_least_delta)
         {
 #ifdef _DEBUG
-            cout << "stop iteration when iter = " << "check2"<<i << '\t' << max_delta << endl;
+            cout << "stop iteration when iter = "<<i << '\t' << max_delta << endl;
 #endif
             break;
         }

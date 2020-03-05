@@ -41,10 +41,10 @@ int main()
     while (i==1)
     {
         i=i+1;
-        auto result=find(line.begin(),line.end(),'\t'); //去除line中的空格
-        line.erase(result);
-        auto result1=find(line.begin(),line.end(),'\r'); //去除换行符
-        line.erase(result1);
+        //auto result=find(line.begin(),line.end(),'\t'); //去除line中的空格
+        //line.erase(result);
+        //auto result1=find(line.begin(),line.end(),'\r'); //去除换行符
+        //line.erase(result1);
         TextUtils::Split(line, "\t", fields);
 
         const string &text = fields[text_field];

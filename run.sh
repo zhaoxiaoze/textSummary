@@ -9,4 +9,4 @@
 ./fromtext data/news.u8 2 results/keysentence1.u8
 
 ##for all based on include
-./text
+./test
