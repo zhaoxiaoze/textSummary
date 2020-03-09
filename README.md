@@ -1,4 +1,5 @@
-# TextRank算法实现
+# PageRank\TextRank算法实现抽取式自动摘要、关键词
+# 使用说明
 
 ##编译
 ```

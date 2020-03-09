@@ -6,16 +6,6 @@ default_target: all
 
 .PHONY : default_target
 
-# The main recursive all target
-all:
-
-.PHONY : all
-
-# The main recursive preinstall target
-preinstall:
-
-.PHONY : preinstall
-
 #=============================================================================
 # Special targets provided by cmake.
 
@@ -45,10 +35,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -62,6 +52,15 @@ CMAKE_BINARY_DIR = /Users/zhaoze/workplace/projects/textSummary
 #=============================================================================
 # Directory level rules for the build root directory
 
+# The main recursive "all" target.
+all: CMakeFiles/keysentence.dir/all
+all: CMakeFiles/keyword.dir/all
+all: CMakeFiles/test.dir/all
+all: CMakeFiles/fromtextTopN.dir/all
+all: CMakeFiles/fromtext.dir/all
+
+.PHONY : all
+
 # The main recursive "clean" target.
 clean: CMakeFiles/keysentence.dir/clean
 clean: CMakeFiles/keyword.dir/clean
@@ -70,6 +69,11 @@ clean: CMakeFiles/fromtextTopN.dir/clean
 clean: CMakeFiles/fromtext.dir/clean
 
 .PHONY : clean
+
+# The main recursive "preinstall" target.
+preinstall:
+
+.PHONY : preinstall
 
 #=============================================================================
 # Target rules for target CMakeFiles/keysentence.dir
@@ -80,11 +84,6 @@ CMakeFiles/keysentence.dir/all:
 	$(MAKE) -f CMakeFiles/keysentence.dir/build.make CMakeFiles/keysentence.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=11,12,13,14,15 "Built target keysentence"
 .PHONY : CMakeFiles/keysentence.dir/all
-
-# Include target in all.
-all: CMakeFiles/keysentence.dir/all
-
-.PHONY : all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/keysentence.dir/rule: cmake_check_build_system
@@ -113,11 +112,6 @@ CMakeFiles/keyword.dir/all:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=16,17,18,19,20 "Built target keyword"
 .PHONY : CMakeFiles/keyword.dir/all
 
-# Include target in all.
-all: CMakeFiles/keyword.dir/all
-
-.PHONY : all
-
 # Build rule for subdir invocation for target.
 CMakeFiles/keyword.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 5
@@ -144,11 +138,6 @@ CMakeFiles/test.dir/all:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=21,22,23,24,25 "Built target test"
 .PHONY : CMakeFiles/test.dir/all
-
-# Include target in all.
-all: CMakeFiles/test.dir/all
-
-.PHONY : all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test.dir/rule: cmake_check_build_system
@@ -177,11 +166,6 @@ CMakeFiles/fromtextTopN.dir/all:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=6,7,8,9,10 "Built target fromtextTopN"
 .PHONY : CMakeFiles/fromtextTopN.dir/all
 
-# Include target in all.
-all: CMakeFiles/fromtextTopN.dir/all
-
-.PHONY : all
-
 # Build rule for subdir invocation for target.
 CMakeFiles/fromtextTopN.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhaoze/workplace/projects/textSummary/CMakeFiles 5
@@ -208,11 +192,6 @@ CMakeFiles/fromtext.dir/all:
 	$(MAKE) -f CMakeFiles/fromtext.dir/build.make CMakeFiles/fromtext.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhaoze/workplace/projects/textSummary/CMakeFiles --progress-num=1,2,3,4,5 "Built target fromtext"
 .PHONY : CMakeFiles/fromtext.dir/all
-
-# Include target in all.
-all: CMakeFiles/fromtext.dir/all
-
-.PHONY : all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/fromtext.dir/rule: cmake_check_build_system

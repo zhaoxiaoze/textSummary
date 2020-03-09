@@ -121,6 +121,34 @@
 					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="fromtextTopN">
+				<Option output="/Users/zhaoze/workplace/projects/textSummary/fromtextTopN" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 fromtextTopN"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fromtextTopN/fast">
+				<Option output="/Users/zhaoze/workplace/projects/textSummary/fromtextTopN" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 fromtextTopN/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/zhaoze/workplace/projects/textSummary/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="fromtext">
 				<Option output="/Users/zhaoze/workplace/projects/textSummary/fromtext" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/zhaoze/workplace/projects/textSummary"/>
@@ -160,40 +188,49 @@
 			<Option target="keysentence"/>
 			<Option target="keyword"/>
 			<Option target="test"/>
+			<Option target="fromtextTopN"/>
 			<Option target="fromtext"/>
 		</Unit>
 		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/sentence_rank.h">
 			<Option target="keysentence"/>
 			<Option target="keyword"/>
 			<Option target="test"/>
+			<Option target="fromtextTopN"/>
 			<Option target="fromtext"/>
 		</Unit>
 		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/text_rank.cpp">
 			<Option target="keysentence"/>
 			<Option target="keyword"/>
 			<Option target="test"/>
+			<Option target="fromtextTopN"/>
 			<Option target="fromtext"/>
 		</Unit>
 		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/text_rank.h">
 			<Option target="keysentence"/>
 			<Option target="keyword"/>
 			<Option target="test"/>
+			<Option target="fromtextTopN"/>
 			<Option target="fromtext"/>
 		</Unit>
 		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/text_utils.cpp">
 			<Option target="keysentence"/>
 			<Option target="keyword"/>
 			<Option target="test"/>
+			<Option target="fromtextTopN"/>
 			<Option target="fromtext"/>
 		</Unit>
 		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/src/text_utils.h">
 			<Option target="keysentence"/>
 			<Option target="keyword"/>
 			<Option target="test"/>
+			<Option target="fromtextTopN"/>
 			<Option target="fromtext"/>
 		</Unit>
 		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/summary_fromtext.cpp">
 			<Option target="fromtext"/>
+		</Unit>
+		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/summary_fromtext_topN.cpp">
+			<Option target="fromtextTopN"/>
 		</Unit>
 		<Unit filename="/Users/zhaoze/workplace/projects/textSummary/test.cpp">
 			<Option target="test"/>
